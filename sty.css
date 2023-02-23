@@ -1,0 +1,56 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: #eee;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% 70% 20%;
+    grid-template-areas: 
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont cont side side"
+    "fot fot fot fot fot fot fot fot fot fot";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: brown;
+}
+
+nav {
+    grid-area: nav;
+    background-color: cornflowerblue;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+}
+ul li{
+
+    margin-left: 20px;
+}
+
+section {
+    grid-area: cont;
+    background-color: cornsilk;
+}
+
+aside {
+    grid-area: side;
+    background-color: silver;
+}
+
+footer {
+    grid-area: fot;
+    background-color: black;
+    color: white;
+}
